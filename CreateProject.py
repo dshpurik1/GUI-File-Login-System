@@ -1,10 +1,3 @@
-#   Danil Shpurik
-#   CSCI 101 - Section F                                                
-#   Create Project
-#   References: Zybooks for using functions and file I/O
-#   https://www.oreilly.com/library/view/python-gui-programming/9781785283758/ch04s02.html
-#   Time: Many Minutes
-
 import tkinter as tk
 from cryptography.fernet import Fernet
 import csv
