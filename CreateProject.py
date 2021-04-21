@@ -15,7 +15,7 @@ def new_user():
     x_coordinate = (screen_width/2) - (width_initial/2)
     y_coordinate = (screen_height/2) - (height_initial/2)
 
-    new_user_screen.geometry("%dx%d+%d+%d" % (width_initial, height_initial,
+    new_user_screen.geometry('%dx%d+%d+%d' % (width_initial, height_initial,
                                             x_coordinate, y_coordinate))
     
     new_user_screen.title('PersonalVault™ New User')
@@ -84,7 +84,7 @@ def username_taken(username):
     x_coordinate = (screen_width/2) - (width_initial/2)
     y_coordinate = (screen_height/2) - (height_initial/2)
 
-    taken_screen.geometry("%dx%d+%d+%d" % (width_initial, height_initial,
+    taken_screen.geometry('%dx%d+%d+%d' % (width_initial, height_initial,
                                             x_coordinate, y_coordinate))
     taken_screen.title('Username Taken')
     message = 'Username "' + username + '" is already taken.'
@@ -107,7 +107,7 @@ def no_match():
     x_coordinate = (screen_width/2) - (width_initial/2)
     y_coordinate = (screen_height/2) - (height_initial/2)
 
-    no_match_pass.geometry("%dx%d+%d+%d" % (width_initial, height_initial,
+    no_match_pass.geometry('%dx%d+%d+%d' % (width_initial, height_initial,
                                             x_coordinate, y_coordinate))
     no_match_pass.title('Could not verify passwords')
     tk.Label(text='Passwords do not match',
@@ -129,7 +129,7 @@ def no_input():
     x_coordinate = (screen_width/2) - (width_initial/2)
     y_coordinate = (screen_height/2) - (height_initial/2)
 
-    no_input_given.geometry("%dx%d+%d+%d" % (width_initial, height_initial,
+    no_input_given.geometry('%dx%d+%d+%d' % (width_initial, height_initial,
                                              x_coordinate, y_coordinate))
     no_input_given.title('No input provided')
     tk.Label(text='No input detected for either username or password',
@@ -159,13 +159,13 @@ def account(username, password, old_msg):
     x_coordinate = (screen_width/2) - (width_initial/2)
     y_coordinate = (screen_height/2) - (height_initial/2)
 
-    account_page.geometry("%dx%d+%d+%d" % (width_initial, height_initial,
+    account_page.geometry('%dx%d+%d+%d' % (width_initial, height_initial,
                                             x_coordinate, y_coordinate))
     account_page.title(username + '\'s PersonalVault™')
     account_page.rowconfigure([0, 1], minsize=60)
     account_page.columnconfigure([0, 1], minsize=425)
 
-    logo = tk.PhotoImage(file = r'C:\Users\dshpu\Desktop\vaultLargeLogo.png')
+    logo = tk.PhotoImage(file = r'vaultLargeLogo.png')
     tk.Label(image=logo, relief='groove').grid(row=0, column=0, stick='w',
                                padx=20, pady=20)
     tk.Button(text='Sign Off', font='Helvetica', bg='#ae4df4', borderwidth=3,
@@ -237,7 +237,7 @@ def success_encrypt(username, password, old_msg):
     x_coordinate = (screen_width/2) - (width_initial/2)
     y_coordinate = (screen_height/2) - (height_initial/2)
 
-    success_input.geometry("%dx%d+%d+%d" % (width_initial, height_initial,
+    success_input.geometry('%dx%d+%d+%d' % (width_initial, height_initial,
                                             x_coordinate, y_coordinate))
  
     success_input.title('Successful Input')
@@ -275,7 +275,7 @@ def about():
     x_coordinate = (screen_width/2) - (width_initial/2)
     y_coordinate = (screen_height/2) - (height_initial/2)
 
-    about_page.geometry("%dx%d+%d+%d" % (width_initial, height_initial,
+    about_page.geometry('%dx%d+%d+%d' % (width_initial, height_initial,
                                              x_coordinate, y_coordinate))
     about_page.title('About Page')
     about_page.rowconfigure([0, 1], minsize=60)
@@ -306,11 +306,11 @@ def initial_screen_page():
     x_coordinate = (screen_width/2) - (width_initial/2)
     y_coordinate = (screen_height/2) - (height_initial/2)
 
-    initial_screen.geometry("%dx%d+%d+%d" % (width_initial, height_initial,
+    initial_screen.geometry('%dx%d+%d+%d' % (width_initial, height_initial,
                                              x_coordinate, y_coordinate))
     
     initial_screen.title('PersonalVault™ Landing')
-    logo = tk.PhotoImage(file = r"C:\Users\dshpu\Desktop\vaultLogo.png")
+    logo = tk.PhotoImage(file = r'vaultLogo.png')
     tk.Button(image=logo, borderwidth=3, command=about).pack()
     
     tk.Label(width='45', height='2', 
@@ -345,7 +345,7 @@ def old_user():
     x_coordinate = (screen_width/2) - (width_initial/2)
     y_coordinate = (screen_height/2) - (height_initial/2)
 
-    old_user_screen.geometry("%dx%d+%d+%d" % (width_initial, height_initial,
+    old_user_screen.geometry('%dx%d+%d+%d' % (width_initial, height_initial,
                                              x_coordinate, y_coordinate))
     old_user_screen.title('PersonalVault™ New User')
     old_user_screen.columnconfigure([0, 2], minsize=50)
@@ -396,7 +396,7 @@ def invalid_login():
     x_coordinate = (screen_width/2) - (width_initial/2)
     y_coordinate = (screen_height/2) - (height_initial/2)
 
-    bad_login_page.geometry("%dx%d+%d+%d" % (width_initial, height_initial,
+    bad_login_page.geometry('%dx%d+%d+%d' % (width_initial, height_initial,
                                              x_coordinate, y_coordinate))
     bad_login_page.title('Failed Login')
     tk.Label(text='Invalid Username or Password!',
