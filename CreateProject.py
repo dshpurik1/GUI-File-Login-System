@@ -16,7 +16,7 @@ def new_user():
     y_coordinate = (screen_height/2) - (height_initial/2)
 
     new_user_screen.geometry('%dx%d+%d+%d' % (width_initial, height_initial,
-                                            x_coordinate, y_coordinate))
+                                              x_coordinate, y_coordinate))
     
     new_user_screen.title('PersonalVault™ New User')
     new_user_screen.columnconfigure([0, 2], minsize=50)
@@ -85,7 +85,7 @@ def username_taken(username):
     y_coordinate = (screen_height/2) - (height_initial/2)
 
     taken_screen.geometry('%dx%d+%d+%d' % (width_initial, height_initial,
-                                            x_coordinate, y_coordinate))
+                                           x_coordinate, y_coordinate))
     taken_screen.title('Username Taken')
     message = 'Username "' + username + '" is already taken.'
     tk.Label(text=message, font='Helvetica', relief='groove',
@@ -167,10 +167,10 @@ def account(username, password, old_msg):
 
     logo = tk.PhotoImage(file = r'vaultLargeLogo.png')
     tk.Label(image=logo, relief='groove').grid(row=0, column=0, stick='w',
-                               padx=20, pady=20)
+                                               padx=20, pady=20)
     tk.Button(text='Sign Off', font='Helvetica', bg='#ae4df4', borderwidth=3,
               fg='white', command=sign_off).grid(row=2, column=0, stick='nw',
-                               padx=20, pady=13)
+                                                 padx=20, pady=13)
     secret_info = tk.Text(height=20, width=50)
     secret_info.grid(row=1, column=0, padx=20, stick='w')
     if len(old_msg) != 0:
@@ -276,7 +276,7 @@ def about():
     y_coordinate = (screen_height/2) - (height_initial/2)
 
     about_page.geometry('%dx%d+%d+%d' % (width_initial, height_initial,
-                                             x_coordinate, y_coordinate))
+                                         x_coordinate, y_coordinate))
     about_page.title('About Page')
     about_page.rowconfigure([0, 1], minsize=60)
     about_page.columnconfigure(0, minsize=425)
@@ -346,7 +346,7 @@ def old_user():
     y_coordinate = (screen_height/2) - (height_initial/2)
 
     old_user_screen.geometry('%dx%d+%d+%d' % (width_initial, height_initial,
-                                             x_coordinate, y_coordinate))
+                                              x_coordinate, y_coordinate))
     old_user_screen.title('PersonalVault™ New User')
     old_user_screen.columnconfigure([0, 2], minsize=50)
     old_user_screen.rowconfigure([0, 3], minsize=95)
