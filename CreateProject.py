@@ -310,7 +310,7 @@ def initial_screen_page():
                                              x_coordinate, y_coordinate))
     
     initial_screen.title('PersonalVault™ Landing')
-    logo = tk.PhotoImage(file = r'vaultLogo.png')
+    logo = tk.PhotoImage(file = r'C:\Users\dshpu\Desktop\stuff\FieldSess\GUI-File-Login-System\vaultLogo.png')
     tk.Button(image=logo, borderwidth=3, command=about).pack()
     
     tk.Label(width='45', height='2', 
